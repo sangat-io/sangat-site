@@ -3,223 +3,239 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nishant Bakshi — Hardware &amp; Test Engineer</title>
-<meta name="description" content="Portfolio of Nishant Bakshi — analog/mixed-signal IC design, PCB engineering, and audio hardware projects.">
+<title>Nishant Bakshi — Analog / Mixed-Signal Design Engineer</title>
+<meta name="description" content="Portfolio of Nishant Bakshi — analog / mixed-signal design engineer. IC design, PCB engineering, and audio hardware projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gurmukhi:wght@200;300;400&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <div class="nav">
-    <div class="brand">sangat.io</div>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#hardware">Hardware</a>
-      <a href="#simulation">IC / Simulation</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
 <div class="wrap">
 
-  <section class="hero" id="about">
-    <div class="hero-inner">
-      <div class="headshot"><img src="assets/images/headshot.jpg" alt="" onerror="this.parentElement.textContent='Headshot\ncoming soon'"></div>
-      <div>
-        <h1>Nishant Bakshi</h1>
-        <div class="tagline">Hardware &amp; Test Engineer — Analog/Mixed-Signal IC Design</div>
-        <p class="bio">
-          Electrical engineer with an MSEE from USC (analog/mixed-signal IC design) and 2+ years in
-          semiconductor reliability and test engineering. Background spans CMOS chip characterization,
-          PCB design/bring-up, and audio hardware — currently designing loudspeaker systems and repairing
-          vintage amplifiers at Common Wave Hi-Fi in Los Angeles.
-        </p>
-        <div class="hero-links">
-          <a href="mailto:nishant@sangat.io">nishant@sangat.io</a>
-          <a href="https://linkedin.com/in/nsbakshi" target="_blank" rel="noopener">linkedin.com/in/nsbakshi</a>
-        </div>
-        <a class="btn-resume" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
-      </div>
+  <div class="site-title">
+    <span class="logo">ਸੰਗਤ</span>
+  </div>
+  <div class="subtitle"><span class="name">Nishant Bakshi</span><span class="role">Analog / Mixed-Signal Design Engineer</span></div>
+
+  <div class="nav" id="top">
+    <span class="sep">[</span> <a href="#hardware">hardware projects</a> <span class="sep">|</span>
+    <a href="#simulation">circuit design &amp; simulation</a> <span class="sep">]</span>
+  </div>
+
+  <hr>
+
+  <section id="about">
+    <p class="bio">
+      Electrical engineer with an MSEE from USC (analog/mixed-signal IC design) and 2+ years in
+      semiconductor reliability and test engineering. Background spans CMOS chip characterization,
+      PCB design/bring-up, and audio hardware &mdash; currently designing loudspeaker systems and repairing
+      vintage amplifiers at Common Wave Hi-Fi in Los Angeles.
+    </p>
+    <div class="links-line">
+      <a href="mailto:nishant@sangat.io">nishant@sangat.io</a>
+      <span class="sep">&middot;</span>
+      <a href="https://linkedin.com/in/nsbakshi" target="_blank" rel="noopener">linkedin.com/in/nsbakshi</a>
+      <span class="sep">&middot;</span>
+      <a href="assets/Nishant_Bakshi_Resume.pdf" target="_blank" rel="noopener">resume.pdf</a>
     </div>
   </section>
 
-  <section class="group" id="hardware">
+  <hr>
+
+  <section id="hardware">
     <div class="section-title">Hardware Projects</div>
 
     <article class="project" id="rfid-lockout">
-      <div class="project-head">
-        <h3>RFID Tool Lockout System</h3>
-        <span class="project-dates">Aug. 2025 – Present</span>
+      <div class="title-bar">
+        <div class="tb-left"><h3>RFID Tool Lockout System</h3><div class="project-type">Work Project &mdash; USC Maker Space</div></div>
+        <span class="dates">aug 2025 &ndash; present</span>
       </div>
-      <div class="project-meta">Work Project — USC Maker Space</div>
-      <p class="project-framing">Access-control system for the Maker Space's laser cutters and waterjet, replacing shared passwords with university ID swipe access.</p>
-      <ul>
-        <li>Replaced shared passwords and lockout codes with university ID swipe access on 2 laser cutters and 1 waterjet cutter</li>
-        <li>Developed ESP32 firmware in ESP-IDF (C/C++) for HID emulation and RFID UID reading</li>
-        <li>Designed a custom carrier PCB and 3D-printed enclosure for the dev board assembly</li>
-        <li>Building a cloud registration and staff-approval pipeline with wireless UID database sync to each device</li>
-        <li>Leading lab-wide rollout and designing a custom PN532 reader circuit to replace the dev board</li>
-      </ul>
-      <div class="gallery">
-        <img class="lead" src="assets/images/rfid-hero.jpg" alt="RFID lockout enclosure">
-        <img src="assets/images/rfid-internals.jpg" alt="RFID lockout internal electronics">
+      <div class="win-body">
+        <p class="summary">Access-control system for the Maker Space's laser cutters and waterjet, replacing shared passwords with university ID swipe access.</p>
+        <ul>
+          <li>Replaced shared passwords and lockout codes with university ID swipe access on 2 laser cutters and 1 waterjet cutter</li>
+          <li>Developed ESP32 firmware in ESP-IDF (C/C++) for HID emulation and RFID UID reading</li>
+          <li>Designed a custom carrier PCB and 3D-printed enclosure for the dev board assembly</li>
+          <li>Building a cloud registration and staff-approval pipeline with wireless UID database sync to each device</li>
+          <li>Leading lab-wide rollout and designing a custom PN532 reader circuit to replace the dev board</li>
+        </ul>
+        <div class="gallery rfid">
+          <figure><img src="assets/images/rfid-enclosure.jpg" alt="RFID lockout enclosure mounted on machine"></figure>
+          <figure><img src="assets/images/rfid-internals.jpg" alt="Internal electronics of the RFID lockout"></figure>
+        </div>
       </div>
     </article>
 
     <article class="project" id="sh-test-pcb">
-      <div class="project-head">
-        <h3>S/H Test PCB — 64-Channel 640MHz Sample-and-Hold Chip</h3>
-        <span class="project-dates">May 2025 – May 2026</span>
+      <div class="title-bar">
+        <div class="tb-left"><h3>S/H Test PCB &mdash; 64-Channel 640MHz Sample-and-Hold Chip</h3><div class="project-type">Research Project &mdash; IEDM Group, USC</div></div>
+        <span class="dates">may 2025 &ndash; may 2026</span>
       </div>
-      <div class="project-meta">Research Project — IEDM Group, USC</div>
-      <p class="project-framing">Test PCB design and bring-up support for a custom 64-channel, 640MHz sample-and-hold CMOS chip.</p>
-      <ul>
-        <li>Designed a PGA-socketed test PCB and wirebonding diagram for the chip; interfaced with packaging vendors for assembly</li>
-        <li>Diagnosed and characterized the chip using probe stations, parametric analyzers, oscilloscopes, and an off-board ADC</li>
-        <li>Assembled, reworked, and brought up mixed-signal PCBs for chip validation, including SMD soldering and signal debugging</li>
-        <li>Contributed to a chip publication in <em>IEEE Solid-State Circuits Letters</em> ("A 1.2-V, 8.5-ns Settling, Bi-Slewing CMOS Driver for Heavy Loads in Discrete-Time Analog Computing Applications")</li>
-      </ul>
-      <div class="gallery">
-        <img class="lead" src="assets/images/sh-bench.jpg" alt="Bench test setup for S/H chip">
-        <img src="assets/images/sh-pcb-overview.jpg" alt="Test PCB with die in socket">
-        <img src="assets/images/sh-die-hand.jpg" alt="Bare die in hand">
-        <img src="assets/images/sh-die-macro.jpg" alt="Die macro photo">
-        <img src="assets/images/sh-driver-schematic.jpg" alt="Driver output stage schematic">
-        <img src="assets/images/sh-distortion-plot.jpg" alt="Measured distortion plot">
+      <div class="win-body">
+        <p class="summary">Test PCB design and bring-up support for a custom 64-channel, 640MHz sample-and-hold CMOS chip.</p>
+        <ul>
+          <li>Designed a PGA-socketed test PCB and wirebonding diagram for the chip; interfaced with packaging vendors for assembly</li>
+          <li>Diagnosed and characterized the chip using probe stations, parametric analyzers, oscilloscopes, and an off-board ADC</li>
+          <li>Assembled, reworked, and brought up mixed-signal PCBs for chip validation, including SMD soldering and signal debugging</li>
+          <li>Contributed to a chip publication in <em>IEEE Solid-State Circuits Letters</em> ("A 1.2-V, 8.5-ns Settling, Bi-Slewing CMOS Driver for Heavy Loads in Discrete-Time Analog Computing Applications")</li>
+        </ul>
+        <div class="gallery sh">
+          <figure><img src="assets/images/sh-pcb-overview.jpg" alt="Test PCB with socketed die"><figcaption>test pcb + socketed die</figcaption></figure>
+          <figure><img src="assets/images/sh-die-hand.jpg" alt="Packaged die held in hand"><figcaption>packaged die</figcaption></figure>
+          <figure><img src="assets/images/sh-die-macro.jpg" alt="Macro photograph of the sample-and-hold die"><figcaption>S/H die</figcaption></figure>
+        </div>
       </div>
     </article>
 
     <article class="project" id="class-a-amp">
-      <div class="project-head">
-        <h3>7W Class-A Power Amp</h3>
-        <span class="project-dates">May 2025 – Sep. 2025</span>
+      <div class="title-bar">
+        <div class="tb-left"><h3>7W Class-A Power Amp</h3><div class="project-type">Personal Project</div></div>
+        <span class="dates">may 2025 &ndash; sep 2025</span>
       </div>
-      <div class="project-meta">Personal Project</div>
-      <p class="project-framing">Single-ended Class-A amplifier built from schematic to finished chassis.</p>
-      <ul>
-        <li>Designed a single-ended Class-A topology with NFET output, active load, JFET driver, and BJT current source</li>
-        <li>Laid out a through-hole PCB in KiCAD and hand-assembled the board</li>
-        <li>Integrated the amplifier into a heatsink-equipped chassis for thermal management of the Class-A bias current</li>
-      </ul>
-      <div class="gallery">
-        <img class="lead" src="assets/images/aca-hero.jpg" alt="Completed Class-A amplifier">
-        <img src="assets/images/aca-pcb-flatlay.jpg" alt="Amplifier PCB flat lay">
-        <img src="assets/images/aca-cad-render.jpg" alt="Amplifier CAD render">
-        <img src="assets/images/aca-chassis-open.jpg" alt="Amplifier chassis with branded faceplate">
-        <img src="assets/images/aca-assembly-bench.jpg" alt="Amplifier assembly on workbench">
+      <div class="win-body">
+        <p class="summary">Single-ended Class-A amplifier built from schematic to finished chassis.</p>
+        <ul>
+          <li>Designed a single-ended Class-A topology with NFET output, active load, JFET driver, and BJT current source</li>
+          <li>Laid out a through-hole PCB in KiCAD and hand-assembled the board</li>
+          <li>Integrated the amplifier into a heatsink-equipped chassis for thermal management of the Class-A bias current</li>
+        </ul>
+        <div class="gallery amp">
+          <figure class="hero"><img src="assets/images/aca-hero.jpg" alt="Completed Class-A amplifier"></figure>
+          <figure><img src="assets/images/aca-chassis.jpg" alt="Amplifier chassis interior"></figure>
+          <div class="stack">
+            <figure><img src="assets/images/aca-assembly.jpg" alt="Heatsink assembly on the workbench"></figure>
+            <figure><img src="assets/images/aca-cad-render.jpg" alt="CAD render of the amplifier PCB"></figure>
+          </div>
+          <figure><img src="assets/images/aca-pcb-flatlay.jpg" alt="Amplifier PCB, top and bottom"></figure>
+        </div>
       </div>
     </article>
 
     <article class="project" id="onken-speaker">
-      <div class="project-head">
-        <h3>Mini Onken Speaker</h3>
-        <span class="project-dates">Jan. 2024 – May 2024</span>
+      <div class="title-bar">
+        <div class="tb-left"><h3>Mini Onken Speaker</h3><div class="project-type">Personal Project</div></div>
+        <span class="dates">jan 2024 &ndash; may 2024</span>
       </div>
-      <div class="project-meta">Personal Project</div>
-      <p class="project-framing">Scaled-down Onken enclosure built for vintage Altec drivers.</p>
-      <ul>
-        <li>Designed an 8 cubic foot Onken enclosure with an external 811 sectoral horn for 1970s Altec drivers</li>
-        <li>Modeled the design using lumped-parameter simulation in VituixCAD and WinISD</li>
-        <li>Fabricated the cabinet from marine-grade Douglas fir plywood using Fusion 360 CAD/CAM and CNC routing</li>
-        <li>Designed, built, and bench-measured a crossover network based on the Altec Model 19 topology</li>
-      </ul>
-      <div class="gallery">
-        <img class="lead" src="assets/images/onken-hero.jpg" alt="Mini Onken speaker, 3/4 angle">
-        <img src="assets/images/onken-front.jpg" alt="Mini Onken speaker, front view">
-        <img src="assets/images/onken-crossover.jpg" alt="Crossover network detail">
-        <img src="assets/images/onken-driver.jpg" alt="Altec compression driver detail">
+      <div class="win-body">
+        <p class="summary">Scaled-down Onken enclosure built for vintage Altec drivers.</p>
+        <ul>
+          <li>Designed an 8 cubic foot Onken enclosure with an external 811 sectoral horn for 1970s Altec drivers</li>
+          <li>Modeled the design using lumped-parameter simulation in VituixCAD and WinISD</li>
+          <li>Fabricated the cabinet from marine-grade Douglas fir plywood using Fusion 360 CAD/CAM and CNC routing</li>
+          <li>Designed, built, and bench-measured a crossover network based on the Altec Model 19 topology</li>
+        </ul>
+        <div class="gallery onken">
+          <figure class="a"><img src="assets/images/onken-front.jpg" alt="Mini Onken cabinet, front view"></figure>
+          <figure class="b"><img src="assets/images/onken-crossover.jpg" alt="Crossover network detail"></figure>
+          <figure class="c"><img src="assets/images/onken-driver.jpg" alt="Vintage Altec compression driver"></figure>
+          <figure class="hero"><img src="assets/images/onken-hero.jpg" alt="Mini Onken cabinet, three-quarter view"></figure>
+        </div>
       </div>
     </article>
 
     <article class="project" id="pocket-photometer">
-      <div class="project-head">
-        <h3>Pocket Photometer</h3>
-        <span class="project-dates">May 2021 – Dec. 2021</span>
+      <div class="title-bar">
+        <div class="tb-left"><h3>Pocket Photometer</h3><div class="project-type">Volunteer Research &mdash; NYU MicroParticle Photo-Physics Lab</div></div>
+        <span class="dates">may 2021 &ndash; dec 2021</span>
       </div>
-      <div class="project-meta">Volunteer Research — NYU MicroParticle Photo-Physics Lab</div>
-      <p class="project-framing">Battery-powered optical power meter for a take-home lab kit now sold commercially on Amazon.</p>
-      <ul>
-        <li>Contributed to development of the Pocket Optics Kit (PO-1) optical power meter, now sold on Amazon</li>
-        <li>Simulated the TIA circuit in OrCAD Capture and laid out the PCB in KiCAD</li>
-        <li>Bench-tested the assembled board across 4 power ranges (1&micro;W – 1mW) and a 350–1050nm wavelength range</li>
-        <li>Achieved 40–75% higher accuracy than smartphone light-meter apps</li>
-      </ul>
-      <div class="gallery">
-        <img class="lead" src="assets/images/photometer-display.jpg" alt="Pocket photometer active display">
-        <img src="assets/images/photometer-topdown.jpg" alt="Pocket photometer top-down view">
-        <img src="assets/images/photometer-setup.jpg" alt="Pocket photometer full test setup">
+      <div class="win-body">
+        <p class="summary">Battery-powered optical power meter for a take-home lab kit now sold commercially on Amazon.</p>
+        <ul>
+          <li>Contributed to development of the Pocket Optics Kit (PO-1) optical power meter, now sold on Amazon</li>
+          <li>Simulated the TIA circuit in OrCAD Capture and laid out the PCB in KiCAD</li>
+          <li>Bench-tested the assembled board across 4 power ranges (1&micro;W &ndash; 1mW) and a 350&ndash;1050nm wavelength range</li>
+          <li>Achieved 40&ndash;75% higher accuracy than smartphone light-meter apps</li>
+        </ul>
+        <div class="gallery photometer">
+          <figure><img src="assets/images/photometer-display.jpg" alt="Photometer showing an active reading"></figure>
+          <figure><img src="assets/images/photometer-topdown.jpg" alt="Top-down view showing the range switch"></figure>
+          <figure class="wide"><img src="assets/images/photometer-setup.jpg" alt="Full optical bench test setup"></figure>
+        </div>
       </div>
     </article>
   </section>
 
-  <section class="group" id="simulation">
-    <div class="section-title">IC Design / Simulation Projects</div>
+  <hr>
+
+  <section id="simulation">
+    <div class="section-title">Circuit Design &amp; Simulation</div>
 
     <article class="project" id="sar-adc">
-      <div class="project-head">
-        <h3>12-Bit 10MS/s Asynchronous SAR ADC</h3>
-        <span class="project-dates">Mar. 2025 – May 2025</span>
+      <div class="title-bar">
+        <div class="tb-left"><h3>12-Bit 10MS/s Asynchronous SAR ADC</h3><div class="project-type">Class Project &mdash; EE631</div></div>
+        <span class="dates">mar 2025 &ndash; may 2025</span>
       </div>
-      <div class="project-meta">Class Project — EE631</div>
-      <p class="project-framing">12-bit, 10MS/s asynchronous SAR ADC designed in TSMC 45nm CMOS.</p>
-      <ul>
-        <li>Designed the differential CDAC, strongarm comparator, D-flip-flops, and self-timed asynchronous control logic</li>
-        <li>Implemented monotonic switching and bottom-plate sampling to reduce pedestal error and eliminate static power</li>
-        <li>Simulated in Cadence Spectre with waveforms recovered via a custom Python script; achieved 9.03-bit ENOB (56.1 dB SNDR) at 1MHz</li>
-        <li>Developed a SPICE-netlist prompting method for AI-assisted transistor sizing (ChatGPT o3), producing one of the few functional AI-sized designs among 15 class teams</li>
-      </ul>
-      <div class="gallery">
-        <img class="lead" src="assets/images/adc-cdac-schematic.png" alt="SAR ADC CDAC schematic">
-        <img src="assets/images/adc-fft-plot.png" alt="SAR ADC FFT output plot">
+      <div class="win-body">
+        <p class="summary">12-bit, 10MS/s asynchronous SAR ADC designed in TSMC 45nm CMOS.</p>
+        <ul>
+          <li>Designed the differential CDAC, strongarm comparator, D-flip-flops, and self-timed asynchronous control logic</li>
+          <li>Implemented monotonic switching and bottom-plate sampling to reduce pedestal error and eliminate static power</li>
+          <li>Simulated in Cadence Spectre with waveforms recovered via a custom Python script; achieved 9.03-bit ENOB (56.1 dB SNDR) at 1MHz</li>
+          <li>Developed a SPICE-netlist prompting method for AI-assisted transistor sizing (ChatGPT o3), producing one of the few functional AI-sized designs among 15 class teams</li>
+        </ul>
+        <div class="gallery stacked">
+          <figure><img src="assets/images/adc-cdac.png" alt="Differential CDAC schematic"><figcaption>differential cdac</figcaption></figure>
+          <figure><img src="assets/images/adc-strongarm.png" alt="Strongarm comparator schematic"><figcaption>strongarm comparator</figcaption></figure>
+          <figure><img src="assets/images/adc-fft.png" alt="2048-point output FFT at 1MHz input"><figcaption>output fft, 2048-pt @ 1MHz</figcaption></figure>
+        </div>
       </div>
     </article>
 
     <article class="project" id="ota">
-      <div class="project-head">
-        <h3>180nm 5.7GHz Rail-to-Rail OTA</h3>
-        <span class="project-dates">Oct. 2024 – Dec. 2024</span>
+      <div class="title-bar">
+        <div class="tb-left"><h3>180nm 5.7GHz Rail-to-Rail OTA</h3><div class="project-type">Class Project &mdash; EE536A</div></div>
+        <span class="dates">oct 2024 &ndash; dec 2024</span>
       </div>
-      <div class="project-meta">Class Project — EE536A</div>
-      <p class="project-framing">180nm CMOS rail-to-rail folded cascode OTA.</p>
-      <ul>
-        <li>Achieved 51 dB DC gain, 5.7 GHz unity-gain bandwidth, and 0.77 nV/&radic;Hz input-referred noise</li>
-        <li>Designed a Differential-Difference Amplifier (DDA) based common-mode feedback circuit adapted from IEEE literature, avoiding poly resistors for output common-mode setting</li>
-        <li>Standardized device sizing in practical multiples (e.g., 18&micro;m increments) to align with Process Control Monitoring structures used in wafer-level characterization</li>
-      </ul>
-      <div class="gallery">
-        <img class="lead" src="assets/images/ota-schematic.png" alt="OTA schematic">
-        <img src="assets/images/ota-gain-plot.png" alt="OTA AC gain and bandwidth plot">
+      <div class="win-body">
+        <p class="summary">180nm CMOS rail-to-rail folded cascode OTA.</p>
+        <ul>
+          <li>Achieved 51 dB DC gain, 5.7 GHz unity-gain bandwidth, and 0.77 nV/&radic;Hz input-referred noise</li>
+          <li>Designed a Differential-Difference Amplifier (DDA) based common-mode feedback circuit adapted from IEEE literature, avoiding poly resistors for output common-mode setting</li>
+          <li>Standardized device sizing in practical multiples (e.g., 18&micro;m increments) to align with Process Control Monitoring structures used in wafer-level characterization</li>
+        </ul>
+        <div class="gallery stacked">
+          <figure><img src="assets/images/ota-schematic.png" alt="Folded cascode OTA schematic"><figcaption>folded cascode schematic</figcaption></figure>
+          <figure><img src="assets/images/ota-ugb.jpg" alt="Unity-gain bandwidth simulation result"><figcaption>unity-gain bandwidth</figcaption></figure>
+        </div>
       </div>
     </article>
 
     <article class="project" id="forward-converter">
-      <div class="project-head">
-        <h3>250W 2-Switch Forward Converter</h3>
-        <span class="project-dates">Mar. 2026 – May 2026</span>
+      <div class="title-bar">
+        <div class="tb-left"><h3>250W 2-Switch Forward Converter</h3><div class="project-type">Class Project &mdash; EE528</div></div>
+        <span class="dates">mar 2026 &ndash; may 2026</span>
       </div>
-      <div class="project-meta">Class Project — EE528</div>
-      <p class="project-framing">250W two-switch forward converter for medium-voltage DC-DC conversion.</p>
-      <ul>
-        <li>Designed a 250W, 450VDC-to-190VDC converter with custom transformer and inductor magnetics</li>
-        <li>Selected Wolfspeed SiC MOSFETs and Schottky diodes for medium-voltage switching</li>
-        <li>Designed a Type-II compensator and feedback network for output regulation</li>
-        <li>Simulated power stage and control loop performance in PLECS, achieving 92.6% efficiency at 300W with sub-2% output ripple during load transients</li>
-      </ul>
-      <div class="gallery">
-        <img class="lead" src="assets/images/converter-schematic.png" alt="Forward converter schematic">
-        <img src="assets/images/converter-transient-plot.png" alt="Forward converter load transient response plot">
+      <div class="win-body">
+        <p class="summary">250W two-switch forward converter for medium-voltage DC-DC conversion.</p>
+        <ul>
+          <li>Designed a 250W, 450VDC-to-190VDC converter with custom transformer and inductor magnetics</li>
+          <li>Selected Wolfspeed SiC MOSFETs and Schottky diodes for medium-voltage switching</li>
+          <li>Designed a Type-II compensator and feedback network for output regulation</li>
+          <li>Simulated power stage and control loop performance in PLECS, achieving 92.6% efficiency at 300W with sub-2% output ripple during load transients</li>
+        </ul>
+        <div class="gallery stacked">
+          <figure><img src="assets/images/converter-schematic.jpg" alt="Converter power stage schematic"><figcaption>power stage</figcaption></figure>
+          <figure><img src="assets/images/converter-transient.png" alt="Load transient response simulation"><figcaption>load transient response</figcaption></figure>
+        </div>
       </div>
     </article>
   </section>
 
+  <hr>
+
   <footer id="contact">
-    <div>Nishant Bakshi — Pasadena, CA</div>
-    <div style="margin-top:10px;">
+    <div>Nishant Bakshi &mdash; Pasadena, CA</div>
+    <div class="contact-links">
       <a href="mailto:nishant@sangat.io">nishant@sangat.io</a>
-      <a href="https://linkedin.com/in/nsbakshi" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      <span class="sep">|</span>
+      <a href="https://linkedin.com/in/nsbakshi" target="_blank" rel="noopener">linkedin</a>
+      <span class="sep">|</span>
+      <a href="assets/Nishant_Bakshi_Resume.pdf" target="_blank" rel="noopener">resume.pdf</a>
+      <span class="sep">|</span>
+      <a href="#top">back to top</a>
     </div>
+    <div class="stamp">no cookies or tracking, ever</div>
   </footer>
 
 </div>

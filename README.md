@@ -21,7 +21,7 @@ then visit http://localhost:8000
 5. Wait for DNS to propagate, then enable "Enforce HTTPS" in repo Settings -> Pages.
 
 ## Updating content
-- Resume: replace `assets/resume.pdf`
+- Resume: replace `assets/Nishant_Bakshi_Resume.pdf` (keep the filename — it is what downloaders see)
 - Headshot: add `assets/images/headshot.jpg`
 - Project text: edit directly in `index.html`
 - Project images: add files to `assets/images/` and reference them in the relevant `.gallery` block
