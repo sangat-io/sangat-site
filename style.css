@@ -258,6 +258,21 @@ hr {
 
 .gallery.photometer .wide { grid-column: 1 / -1; }
 
+/* Systolic array: schematic, layout, and results each full-width,
+   DRC + LVS side by side underneath */
+.gallery.systolic {
+  grid-template-columns: 1fr 1fr;
+}
+
+.gallery.systolic .wide { grid-column: 1 / -1; }
+
+/* LVS dialog screenshot is a small native window grab -- shown 20% smaller
+   than its column so it doesn't blow up to match the DRC terminal log */
+.gallery.systolic .lvs-shot img {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* ---------- Lightbox ---------- */
 #lightbox {
   position: fixed;
